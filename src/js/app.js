@@ -53,3 +53,14 @@ function convertCurrency(amount, fromCurrency, toCurrency, cb) {
         cb(e);
     });
 }
+
+function getCurrencies(){
+
+    fetch ('https://free.currencyconverterapi.com/api/v5/currencies')
+        .then(function (res) {
+            return res.json();
+        })
+        .then(function (data) {
+            console.log(data);
+        })
+}
