@@ -1,0 +1,12 @@
+.opinion{
+    padding: 15px;
+    min-height: 100px;
+}
+.opinion:hover{
+    background-color: brown
+    
+}
+
+h1{
+    text-align: center;
+}
