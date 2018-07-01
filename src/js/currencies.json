@@ -1,0 +1,66 @@
+{
+    "currencies": [
+        {
+            "currencyName": "Albanian Lek",
+            "currencySymbol": "Lek",
+            "id": "ALL"
+        },
+        {
+            "currencyName": "Abdullah",
+            "currencySymbol": "LYk",
+            "id": "ABD"
+        },
+        {
+            "currencyName": "Afghan Afghani", 
+            "currencySymbol": "Ø", 
+            "id": "AFN"
+        },
+        {
+            "currencyName": "Armenian Dram", 
+            "id": "AMD"
+        },
+        {
+            "currencyName": "Netherlands Antillean Gulden", 
+            "currencySymbol": "Æ", 
+            "id": "ANG"
+        },
+        {
+            "currencyName": "Angolan Kwanza", 
+            "id": "AOA"
+        },
+        {
+            "currencyName": "Argentine Peso", 
+            "currencySymbol": "$", 
+            "id": "ARS"
+        },
+        {
+            "currencyName": "Australian Dollar", 
+            "currencySymbol": "$", 
+            "id": "AUD"
+        },
+        {
+            "currencyName": "Aruban Florin", 
+            "currencySymbol": "Æ", 
+            "id": "AWG"
+        },
+        {
+            "currencyName": "Azerbaijani Manat", 
+            "currencySymbol": "Ð¼Ð°Ð½", 
+            "id": "AZN"
+        },
+        {
+            "currencyName": "Bosnia And Herzegovina Konvertibilna Marka", 
+            "currencySymbol": "KM", 
+            "id": "BAM"
+        },
+        {
+            "currencyName": "Barbadian Dollar", 
+            "currencySymbol": "$", 
+            "id": "BBD"
+        },
+        {
+            "currencyName": "Bangladeshi Taka", 
+            "id": "BDT"
+        }
+    ]
+}

@@ -8,8 +8,9 @@ var cacheFiles = [
     '/src/js/jquery/3.3.1/jquery.min.js',
     '/src/js/popper.js/1.14.0/umd/popper.min.js',
     '/src/css/4.1.0/js/bootstrap.min.js',
-    '/src/js/test.js',
-    '/src/js/app.js'
+    '/src/js/main.js',
+    '/src/js/app.js',
+    'https://free.currencyconverterapi.com/api/v5/currencies'
 ];
 
 self.addEventListener('install', function (event) {
@@ -40,4 +41,11 @@ self.addEventListener('activate', function (event) {
 
 self.addEventListener('fetch', function (event) {
     console.log("[Service Worker] Fetching", event.request.url)
+})
+
+self.addEventListener('storefiles', function (event) {
+    var storage = this.result.createObjectStore("data", {autoIncrement: true})
+    storage.add({currencies: "js/currencies.json", date: "not found.", usage: "0"}, "save-data")
+
+    console.log("Creating a new Database")
 })

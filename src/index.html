@@ -9,7 +9,7 @@
     <script src="/src/js/jquery/3.3.1/jquery.min.js"></script>
     <script src="/src/js/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="/src/css/4.1.0/js/bootstrap.min.js"></script>
-    <script src="/src/js/test.js"></script>
+    <script src="/src/js/main.js"></script>
 </head>
 <body>
     <div class="container-fluid bg-light">
@@ -22,18 +22,46 @@
         <div class="container mx-auto">
             <form action="">
                 <div class="form-group">
-                    <label for="input_currency"><b>Input</b></label>
-                    <select name="" id="">
-                        <option value="PHP">PHP Dollars</option>
-                        <option value="AUD"> Austrialian Dollars</option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
+                    <label for="input_currency"><b>Amount</b></label>
+                    <input type="text" class="form-control" name="amount" id="amount">
+                </div>
+                <div class="form-group">
+                    <label for="input_currency"><b>Input Currency</b></label>
+                    <select name="" id="input-currencies-list">
+                        <option value="ALL">Albanian Lek</option>
+                        <option value="AFN"> Afghan Afghani</option>
+                        <option value="AMD">Armenian Dram</option>
+                        <option value="ANG">Netherlands Antillean Gulden</option>
+                        <option value="AOA">Angolan Kwanza</option>
+                        <option value="ARS">Argentine Peso</option>
+                        <option value="AUD">Australian Dollar</option>
+                        <option value="AWG">Aruban Florin</option>
+                        <option value="AZN">Azerbaijani Manat</option>
+                        <option value="AWG">Azerbaijani Manat</option>
+                        <option value="BAM">Bosnia And Herzegovina Konvertibilna Marka</option>
+                        <option value="BBD">Barbadian Dollar</option>
+                        <option value="BDT">Bangladeshi Taka</option>
                     </select>
                 </div>
-                <button type="button" class="btn btn-lg btn-success" onclick="getCurrencies()">Convert</button>
+                <div class="form-group">
+                    <label for="input_currency"><b>Exchange Currency</b></label>
+                    <select name="" id="exchange-currencies-list">
+                        <option value="ALL">Albanian Lek</option>
+                        <option value="AFN"> Afghan Afghani</option>
+                        <option value="AMD">Armenian Dram</option>
+                        <option value="ANG">Netherlands Antillean Gulden</option>
+                        <option value="AOA">Angolan Kwanza</option>
+                        <option value="ARS">Argentine Peso</option>
+                        <option value="AUD">Australian Dollar</option>
+                        <option value="AWG">Aruban Florin</option>
+                        <option value="AZN">Azerbaijani Manat</option>
+                        <option value="AWG">Azerbaijani Manat</option>
+                        <option value="BAM">Bosnia And Herzegovina Konvertibilna Marka</option>
+                        <option value="BBD">Barbadian Dollar</option>
+                        <option value="BDT">Bangladeshi Taka</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-lg btn-success" onclick="prepareConvertCurrency()">Convert</button>
             </form>
                 <div class="">
                     <p><h3 id="equivalent-exchange-header">Equivalent Exchange Rate: <span id="equivalent-currency"></span></h3></p>
